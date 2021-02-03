@@ -6,7 +6,7 @@ describe("Visitor can see a list of movies", () => {
       url: "https://content.viaplay.se/pc-se/serier/samtliga",
       response: "fixture:visitor_can_see_list_of_movies.json"
     })
-    cy.visit("/")
+    cy.visit("http://localhost:3000/")
   })
 
   it ("successfully display a list of articles", () => {
