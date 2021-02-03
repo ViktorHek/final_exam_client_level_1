@@ -12,9 +12,9 @@ describe("Visitor can see a list of movies", () => {
   it ("successfully display a list of articles", () => {
     cy.get("[data-cy='movie-index']").within(() => {
       cy.get("[data-cy='movie-list']")
-        .should("contain", "greys-anatomy")
-        .and('contain', "criminal-minds")
-        .and('contain', "hawaii-five-0")
+        .should("contain", "Grey's Anatomy")
+        .and('contain', "Criminal Minds")
+        .and('contain', "Hawaii Five-0")
     })
   })
 })
